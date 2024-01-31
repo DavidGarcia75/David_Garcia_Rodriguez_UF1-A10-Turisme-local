@@ -1,84 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explorando Tokio</title>
-    <link rel="stylesheet" href="/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tokio - Ciudad Moderna</title>
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+  
 </head>
 <body>
 
-    <header class="header">
-        <h1>Tokio</h1>
-    </header>
+  <header>
+    <h1>--Tokio--</h1>
+  </header>
 
-    <div class="container">
-        <div class="column photos-column">
-            <h2 ><a href="/fotosmenu/fotos.html"Fotos>Fotos</a></h2>
-            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./index/Fotos/OIP (3).jpg" class="d-block w-100" alt="Imagen 1">
-                    </div>
-                    <div class="carousel-item">
-                    
-                        <img src="./index/Fotos/OIP (4).jpg" class="d-block w-100" alt="Imagen 2">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./index/Fotos/OIP (1).jpg" class="d-block w-100" alt="Imagen 3">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                </button>
-            </div>
-        </div>
-        <div class="column content-column">
-          <div class="column content-column">
-            <h2><a href="/lugares/lugares.html">Lugares</a></h2>
-            <div id="carouselLugares" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="/index/Fotos/OIP (2).jpg" class="d-block w-100" alt="Lugar 1">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/index/Fotos/OIP (1).jpg" class="d-block w-100" alt="Lugar 2">
-                    </div>
-                    
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselLugares" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselLugares" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                </button>
-            </div>
-        </div>
-            
-
-        </div>
-        <div class="column map-column">
-            <h2 ><a href="../mapa/mapa.html"Fotos>Mapa</a></h2>
-            <div>
-                <img src="/mapa/fotomapa/OIP (5).jpg" class="d-block w-100" alt="Imagen 1">
-            </div>
-        </div>
+  <div class="container">
+    <div class="column">
+      <img id="menuicon" src="/menuicon.jpg" alt="Lugar de interés 1">
+      <div id="list-example" class="list-group">
+        <a class="list-group-item list-group-item-action" <a href="#Noticia">Noticias</a></a>
+        <a class="list-group-item list-group-item-action" <a href="#mapa">Mapa</a></a>
+        <a class="list-group-item list-group-item-action" <a href="#Economia">Economia</a></a>
+        <a class="list-group-item list-group-item-action" <a href="#odai">Ultima Sitio Interes</a></a>
+      </div>
+      <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+      </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <div class="column">
+      
+      <div id="carouselExample" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./OIP.jpg" class="d-block w-100" alt="Imagen 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./PAISAJE.jpg" class="d-block w-100" alt="Imagen 2">
+          </div>
+          <div class="carousel-item">
+            <img src="/TORRE.jpg" class="d-block w-100" alt="Imagen 3">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+      </div>
+      <div>
+        <h2>Lugares</h2>
+        <br>
+        <h5>Akihabara</h5>
+        <img src="/akihabara.jpg" alt="">
+        <p>Es un distrito "friki" donde puedes gastarte todo tu dinero en merchandising de todo tipo de series japonesas, comida local...</p>
+        <div>
+          <h5>Parque Ueno</h5>
+          <img src="odaiba.jpg" alt="">
+          <p>El parque ueno es el parque mas popular en el que podras pasear por estanques museos y templos.</p>
+        </div>
+        <div>
+          <h5>Templo Sensoji</h5>
+          <img src="/templo.jpg" alt="">
+          <p>Uno de los templos mas representativos y el mas antiguo de la ciudad sobre la religion budista.</p>
+        </div>
+        <div>
+          <h5>Tokyo Skytree</h5>
+          <img src="/torret.jpg" alt="">
+          <p>Cerca de Asakusa en el barrio de sumida, se encuetra la tokio skytree una torre de 634 metros de altura</p>
+        </div>
+        <div>
+          <h5  id="odai" >Odaiba</h5>
+          <img src="/odaiba.jpg" alt="">
+          <p>Es una isla artificial situada en la bahia de tokio y coectada con la ciudad por el largo del puente rainbow</p>
+        </div>
+      </div>
+    
+    </div>
+
+    <div class="column">
+      <img id="icono" src="/icono2.jpg" alt="Lugar de interés 3">
+      <h2  id="Noticia"  >Noticias</h2>
+      <hr>
+      <h5  id="Economia" >Economia</h5>
+      <p>Tratándose de un proceso histórico, la economía japonesa desplegó un crecimiento a partir de 1960, cuando el primer ministro Hayato Ikeda se propuso doblar la producción en una década, consiguiéndolo en solo cinco años, asimismo, evitó la entrada de capital extranjero y fomentó la innovación tecnológica, junto con una estrategia de creación de empleo público para estimular la demanda y el consumo interno, es decir Japón producía para los japoneses.</p>
+      <div>
+        <h5>Deportes</h5>
+        <p>Mañana se disputara en la copa Asiatica el esperado partido Japón vs Corea del Norte en el cual habran nombres de gran significado como Matsuda o Fushimoto.</p>
+        <hr>
+        <div>
+          <h5>Tecnologias</h5>
+          <p>La carrera por la supremacía tecnológica enfrenta a potencias como Estados Unidos, China y la Unión Europea en el campo de batalla de la innovación y el desarrollo. Sin embargo, hay un antiguo actor que podría estar a punto de volver a la competición. Se trata de Japón, una estrella que dejó de brillar en este terreno durante casi dos décadas al ser superado por vecinos como Corea y Taiwán, pero que recientemente está consolidando alianzas y aumentando la inversión en el sector para volver a ser uno de los ejes digitales del planeta.
+
+            Hubo una época en que Japón era sinónimo de innovación. Sony, Nintendo, Canon, Toshiba, Mitsubishi, Honda; eran solo algunas de las marcas que iban a la vanguardia de la tecnología, creando productos de calidad que dominaban sectores enteros. De hecho, la unidad de inteligencia de The Economist situó al país como el más innovador del mundo en 2002. Asimismo, el Índice Global de Innovación (GII) de la Organización Mundial de la Propiedad intelectual (WIPO) lo situaba en el puesto cuatro en 2007.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2  id="mapa" >MAPA:</h2>
+  <hr>
+  <hr>
+
+  <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1663021.9673613338!2d138.45048328074847!3d35.502058185397885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2zVG9raW8sIEphcMOzbg!5e0!3m2!1ses!2ses!4v1706704272422!5m2!1ses!2ses" width="1200px" height="1200px"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+ 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+ 
+
 </body>
 
-
-  
 </html>
-
-
 
